@@ -10,4 +10,4 @@ const myIncludes = function (arr, element) {
   return false;
 }
 
-console.log(myIncludes(["Banana", "Orange", "Apple", "Mango"], "Apple"));
+console.log(myIncludes(["Banana", "Orange", "Apple", "Mango"], "Apple"))
