@@ -8,4 +8,4 @@ const isKeyIncluded = function (object, inKey) {
   return false;
 }
 
-console.log(isKeyIncluded({ user: "Steve", name: "Jobs" }, "name"))
+console.log(isKeyIncluded({ user: "Steve", name: "Jobs" }, "name"));
