@@ -16,4 +16,4 @@ const twoDigitCombination = function () {
   return finalResult;
 }
 
-console.log(twoDigitCombination())
+console.log(twoDigitCombination());
