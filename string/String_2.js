@@ -16,4 +16,4 @@ const symbolToUppercase = function (word, digit) {
   return newWord;
 }
 
-console.log(symbolToUppercase("lampard", 4))
+console.log(symbolToUppercase("lampard", 4));
