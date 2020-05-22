@@ -16,4 +16,4 @@ const myFill = function (arr, value, start = 0, end = arr.length) {
   return newArr;
 }
 
-console.log(myFill(["A", "B", "C", "D", "E"], "Hello", 1, 4))
+console.log(myFill(["A", "B", "C", "D", "E"], "Hello", 1, 4));
