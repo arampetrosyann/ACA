@@ -18,4 +18,4 @@ const mySlice = function (arr, start = 0, end = arr.length) {
   return newArr;
 }
 
-console.log(mySlice(["A", "B", "C", "D", "E", "F", "G"], -6, -2))
+console.log(mySlice(["A", "B", "C", "D", "E", "F", "G"], -6, -2));
