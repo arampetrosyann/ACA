@@ -8,4 +8,4 @@ const findSize = function (obj) {
   return size ? size : "Empty";
 }
 
-console.log(findSize({ name: "Steve", lastname: "Jobs" }))
+console.log(findSize({ name: "Steve", lastname: "Jobs" }));
