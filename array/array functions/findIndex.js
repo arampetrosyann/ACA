@@ -16,4 +16,4 @@ const myFindIndex = function (array, definedFunction) {
   return -1;
 }
 
-console.log(myFindIndex(numbers, isOdd));
+console.log(myFindIndex(numbers, isOdd))
