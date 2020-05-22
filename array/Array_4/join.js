@@ -18,4 +18,4 @@ const myJoin = function (arr, separator = ",") {
   return arrString;
 }
 
-console.log(myJoin(["Banana", "Orange", "Apple", "Mango"], "_"));
+console.log(myJoin(["Banana", "Orange", "Apple", "Mango"], "_"))
