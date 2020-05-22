@@ -8,4 +8,4 @@ const isValueIncluded = function (object, value) {
   return false;
 }
 
-console.log(isValueIncluded({ user: "Steve", name: "Jobs", age: 25 }, 25));
+console.log(isValueIncluded({ user: "Steve", name: "Jobs", age: 25 }, 25))
