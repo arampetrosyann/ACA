@@ -3,14 +3,8 @@
 const toSubsets = function (arr) {
   let newArray = [];
 
-  for (let indexArr = 0; indexArr < arr.length; ) {
-    let subset = [];
-
-    for (let indexSub = 0; indexSub < 3 && indexArr < arr.length; indexSub++) {
-      subset.push(arr[indexArr]);
-
-      indexArr++;
-    }
+  for (let index = 0; index < arr.length; index += 3) {
+    let subset = arr.slice(index, index + 3);
 
     newArray.push(subset);
   }
