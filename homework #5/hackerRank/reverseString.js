@@ -1,14 +1,17 @@
 "use strict"
 
 const reverseString = function (str) {
+  let result = str;
+
   try {
     const reverseStr = str.split("").reverse().join("");
 
-    return reverseStr;
+    result = reverseStr;
   } catch (err) {
     console.error(err.message);
-    return str;
+  } finally {
+    return result;
   }
 }
 
-console.log(reverseString("Delon"));
+console.log(reverseString('Delon'));
