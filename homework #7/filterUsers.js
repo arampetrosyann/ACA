@@ -20,11 +20,11 @@ const users = [
 ];
 
 const filterUsers = function (arr) {
-  const onlyEng = function (user) {
-    return user["lang"].toLowerCase() === "eng";
+  const removeRu = function (user) {
+    return user["lang"].toLowerCase() !== "ru";
   }
 
-  const engArr = arr.filter(onlyEng);
+  const engArr = arr.filter(removeRu);
 
   return engArr;
 }
