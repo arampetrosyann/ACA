@@ -1,0 +1,125 @@
+html {
+    height: 100%;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+:root {
+    --hefo-bg-color: rgb(0, 61, 153);
+    --hefo-font-family: 'Varela Round', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.page-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    color: rgb(255, 255, 255);
+    background-color: var(--hefo-bg-color);
+    font-family: var(--hefo-font-family);
+}
+
+.page-content {
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(230, 230, 230);
+}
+
+.content-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 800px;
+    height: 450px;
+    color: rgb(0, 0, 0);
+    box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.8);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(13, 13, 13);
+}
+
+.content-box__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.content-box__item--top {
+    box-sizing: border-box;
+    height: 80%;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.img {
+    width: 100%;
+}
+
+.content-box__item--bottom {
+    justify-content: space-evenly;
+    height: 20%;
+}
+
+.item-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+.arrow {
+    display: inline-block;
+    padding: 3px;
+    border: solid rgb(0, 0, 0);
+    border-width: 0 3px 3px 0;
+}
+
+.arrow--right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+  
+.arrow--left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.page-foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: var(--hefo-bg-color);
+    font-family: var(--hefo-font-family);
+}
+
+.created-by {
+    text-align: center;
+    font-size: 25px;
+    color: rgb(0, 0, 0, 0.5);
+}
+
+.created-by:hover {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+@media (max-width: 880px) {
+    .content-box {
+        width: 500px;
+        height: 350px;
+    }
+}
