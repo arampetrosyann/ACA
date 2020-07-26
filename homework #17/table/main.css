@@ -1,0 +1,113 @@
+html {
+    height: 100%;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+:root {
+    --hefo-bg-color: rgb(0, 61, 153);
+    --hefo-font-family: 'Varela Round', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.page-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    color: rgb(255, 255, 255);
+    background-color: var(--hefo-bg-color);
+    font-family: var(--hefo-font-family);
+}
+
+.page-content {
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(230, 230, 230);
+}
+
+.content-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 450px;
+    color: rgb(0, 0, 0);
+    box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.8);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(13, 13, 13);
+    border-radius: 6%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.content-table {
+    width: 500px;
+    margin: 10px;
+    border: 2px solid black;
+}
+
+.table-input {
+    width: 150px;
+}
+
+.sort-age {
+    cursor: pointer;
+}
+
+.page-foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: var(--hefo-bg-color);
+    font-family: var(--hefo-font-family);
+}
+
+.created-by {
+    text-align: center;
+    font-size: 25px;
+    color: rgb(0, 0, 0, 0.5);
+}
+
+.created-by:hover {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+@media (min-width: 881px) and (max-width: 1060px) {
+    .content-box {
+        width: 80%;
+    }
+
+    .content-table {
+        width: 475px;
+    }
+
+    .table-input {
+        width: 120px;
+    }
+}
+
+@media (max-width: 880px) {
+    .content-box {
+        width: 97%;
+    }
+
+    .content-table {
+        width: 450px;
+    }
+
+    .table-input {
+        width: 120px;
+    }
+}

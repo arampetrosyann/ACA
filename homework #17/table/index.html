@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html" />
+    <meta name="author" content="Aram Petrosyan" />
+    <meta name="description" content="A page which contains a table with a students information." />
+    <title>DOM Exercise 7</title>
+    <link rel="shortcut icon" href="https://bit.ly/2ZSgiRy" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+    <header class="page-head">
+            <h1>Exercise</h1>
+    </header>
+
+    <main class="page-content">
+        <section class="content-box">
+            <table class="content-table">
+                <thead class="table-head">
+                    <tr>
+                        <th>Name</th>
+                        <th class="sort-age">Age</th>
+                        <th>Average grade</th> 
+                    </tr> 
+                </thead>
+                <tfoot class="table-foot">
+                    <tr>
+                        <td><input class="table-input" type="text" name="name" maxlength="15" placeholder="Name" /></td>
+                        <td><input class="table-input" type="number" name="age" placeholder="Age" /></td>
+                        <td><input class="table-input" type="number" name="grade" placeholder="Grade" /></td>
+                    </tr>
+                </tfoot>
+                <tbody class="table-body"></tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer class="page-foot">
+        <section class="created-by">
+            <strong>&#8594; Created by Aram</strong>
+        </section>
+    </footer>
+
+    <script type="module" src="./tableControl.js"></script>
+</body>
+</html>
