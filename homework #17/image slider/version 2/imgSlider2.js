@@ -6,30 +6,35 @@ const leftBtn = document.querySelector(".item-button--left");
 
 const rightBtn = document.querySelector(".item-button--right");
 
-const imgList = ["./images/img-1.jpg", "./images/img-2.jpg","./images/img-3.jpg","./images/img-4.jpg"];
+const imgList = [
+  "./images/img-1.jpg",
+  "./images/img-2.jpg",
+  "./images/img-3.jpg",
+  "./images/img-4.jpg",
+];
 
-let indOfImage = 0;
+let indOfImg = 0;
 
 leftBtn.addEventListener("click", function () {
-    indOfImage === 0 ? indOfImage = imgList.length - 1 : indOfImage--;
+    indOfImg === 0 ? (indOfImg = imgList.length - 1) : indOfImg--;
 
-    image.src = imgList[indOfImage];
+  image.src = imgList[indOfImg];
 });
 
 rightBtn.addEventListener("click", function () {
-    indOfImage < imgList.length - 1 ? indOfImage++ : indOfImage = 0;
+    indOfImg < imgList.length - 1 ? indOfImg++ : (indOfImg = 0);
 
-    image.src = imgList[indOfImage];
+  image.src = imgList[indOfImg];
 });
 
-const slideImages = (function () {    
-    setInterval(function () {
-        if (indOfImage < imgList.length - 1) {    
-            indOfImage++;
-        } else {
-            indOfImage = 0;
-        }
+const slideImages = (function () {
+  setInterval(function () {
+    if (indOfImg < imgList.length - 1) {
+        indOfImg++;
+    } else {
+        indOfImg = 0;
+    }
 
-        image.src = imgList[indOfImage];
-    }, 2000)
+    image.src = imgList[indOfImg];
+  }, 2000);
 })();
