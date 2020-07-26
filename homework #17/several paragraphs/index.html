@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html" />
+    <meta name="author" content="Aram Petrosyan" />
+    <meta name="description" content="A page which contains several paragraphs of text and two inputs.
+    One of the inputs changes the color of the texts in the paragraphs
+    and the other one changes the background color of paragraphs." />
+    <title>DOM Exercise 6</title>
+    <link rel="shortcut icon" href="https://bit.ly/2ZSgiRy" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+    <header class="page-head">
+            <h1>Exercise</h1>
+    </header>
+
+    <main class="page-content">
+        <section class="content-box content-box--top">
+            <div class="content-box__item">
+                <p>
+                    <b>Armenia</b> is a unitary, multi-party, democratic nation-state with an ancient cultural heritage. 
+                    Urartu was established in 860 BC and by the 6th century BC it was replaced by the Satrapy of Armenia. 
+                    The Kingdom of Armenia reached its height under Tigranes the Great in the 1st century BC and became 
+                    the first state in the world to adopt Christianity as its official religion in the late 3rd or early 
+                    4th century AD. The official date of state adoption of Christianity is 301. The ancient Armenian 
+                    kingdom was split between the Byzantine and Sasanian Empires around the early 5th century. 
+                    Under the Bagratuni dynasty, the Bagratid Kingdom of Armenia was restored in the 9th century.
+                </p>
+            </div>
+            <div class="content-box__item">
+                <p>
+                    <b>Belgium</b>, officially the Kingdom of Belgium, is a country in Western Europe. 
+                    It is bordered by the Netherlands to the north, Germany to the east, Luxembourg to the southeast, 
+                    France to the southwest, and the North Sea to the northwest. It covers an area of 30,689 km2 and 
+                    has a population of more than 11.5 million, making it the 22nd most densely populated country in the 
+                    world and the 6th most densely populated country in Europe, with a density of 376 per square kilometre. 
+                    The capital and largest city is Brussels; other major cities are Antwerp, Ghent, Charleroi and Liège.
+                </p>
+            </div>
+            <div class="content-box__item">
+                <p>
+                    <b>The Czech Republic</b>, also known by its short-form name Czechia, is a landlocked country in Central Europe
+                    bordered by Austria to the south, Germany to the west, Poland to the northeast and Slovakia to the southeast.
+                    The Czech Republic has hilly landscape that covers an area of 78,866 square kilometers with a mostly temperate
+                    continental climate and oceanic climate. It is a unitary parliamentary republic, with 10.7 million inhabitants.
+                    Its capital and largest city is Prague, with 1.3 million residents; other major cities include Brno, Ostrava,
+                    Olomouc and Pilsen. The Czech state was formed in the late 9th century as the Duchy of Bohemia under the Great
+                    Moravian Empire. In 1002, the duchy was formally recognized as an Imperial State of the Holy Roman Empire, 
+                    and became the Kingdom of Bohemia in 1198, reaching its greatest territorial extent in the 14th century.
+                </p>
+            </div>
+        </section>
+
+        <section class="content-box content-box--bottom">
+            <form class="form">
+                <section class="form__item">
+                    Text color:
+                    <input class="item-input" type="text" name="text-color" placeholder="#HEX" />
+                </section>
+                <section class="form__item">
+                    Background color:
+                    <input class="item-input" type="text" name="bg-color" placeholder="#HEX" />
+                </section>
+                <section class="form__item">
+                    <input class="item-button" type="button" value="Apply">
+                </section>
+            </form>
+        </section>
+    </main>
+
+    <footer class="page-foot">
+        <section class="created-by">
+            <strong>&#8594; Created by Aram</strong>
+        </section>
+    </footer>
+
+    <script type="module" src="colorChange.js"></script>
+</body>
+</html>
