@@ -1,0 +1,107 @@
+html {
+    height: 100%;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+:root {
+    --hefo-bg-color: rgb(0, 61, 153);
+    --hefo-font-family: 'Varela Round', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.page-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    color: rgb(255, 255, 255);
+    background-color: var(--hefo-bg-color);
+    font-family: var(--hefo-font-family);
+}
+
+.page-content {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    background-color: rgb(230, 230, 230);
+}
+
+.content-head {
+    text-align: center;
+    font-weight: lighter;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-shadow: 4px 4px 20px rgb(0, 66, 190);
+    cursor: pointer;
+}
+
+.content-head:hover {
+    color: rgb(78, 78, 78);
+}
+
+.content-films {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.film-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 380px;
+    height: 260px;
+    margin: 10px;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.8);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(13, 13, 13);
+    border-radius: 6%;
+    overflow: auto;
+}
+
+.film-box__item {
+    display: flex;
+    align-items: center;
+    margin: 3px 0;
+}
+
+.about-film {
+    width: 100%;
+    max-height: 150px;
+    margin: 0 5px;
+    padding: 0 5px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(78, 78, 78, 0.2);
+    overflow-y: auto;
+}
+
+.page-foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: var(--hefo-bg-color);
+    font-family: var(--hefo-font-family);
+}
+
+.created-by {
+    text-align: center;
+    font-size: 25px;
+    color: rgb(0, 0, 0, 0.5);
+}
+
+.created-by:hover {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
