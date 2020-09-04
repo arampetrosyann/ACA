@@ -1,0 +1,10 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.coll {
+  display: flex;
+  justify-content: space-evenly;
+}
