@@ -10,15 +10,15 @@ export default function Input(props) {
       value={props.value}
       name={props.name}
       placeholder={props.holder}
-      onInput={props.onInput}
+      onChange={props.onChange}
     />
   );
 }
 
 Input.propTypes = {
   type: PropTypes.string,
-  value: PropTypes.string,
-  name: PropTypes.string,
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  name: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   holder: PropTypes.string,
-  onInput: PropTypes.func,
+  onChange: PropTypes.func,
 };

@@ -5,8 +5,6 @@ import Message from "./components/Message/Message";
 import { getUser, setUser } from "./modules/localStorage";
 import "./App.css";
 
-const user = getUser("user");
-
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -103,34 +101,70 @@ class App extends React.Component {
     event.preventDefault();
 
     if (this.state.isNameValid && this.state.isPassValid) {
-      setUser("user", { name: this.state.name, pass: this.state.password });
+      setUser("user", {
+        name: this.state.name,
+        psw: this.state.password,
+        isNameValid: true,
+        isPassValid: true,
+      });
     }
   };
+
+  componentDidMount() {
+    const user = getUser("user");
+
+    try {
+      if (user.isNameValid && user.isPassValid) {
+        this.setState({
+          name: user.name,
+          password: user.psw,
+          isNameValid: true,
+          isPassValid: true,
+        });
+      }
+    } catch (error) {
+      this.setState({
+        name: "",
+        password: "",
+        isNameValid: false,
+        isPassValid: false,
+      });
+    }
+  }
 
   render() {
     return (
       <form className="login">
         <h2>LOGIN</h2>
+
         <label htmlFor="name">Username</label>
+
         <Input
           type="text"
+          value={this.state.name}
           name="name"
           holder="Enter Username"
-          onInput={this.handleNameInput}
+          onChange={this.handleNameInput}
         />
+
         {this.state.showNameMessage ? (
           <Message text={this.state.nameErrMessage} />
         ) : null}
+
         <label htmlFor="psw">Password</label>
+
         <Input
           type="password"
+          value={this.state.password}
           name="psw"
           holder="Enter Password"
-          onInput={this.handlePasswordInput}
+          onChange={this.handlePasswordInput}
         />
+
         {this.state.showPassMessage ? (
           <Message text={this.state.passErrMessage} />
         ) : null}
+
         <Submit
           value="Login"
           onClick={this.handleSubmit}
