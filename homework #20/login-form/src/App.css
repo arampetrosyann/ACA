@@ -1,2 +1,10 @@
-.app {
+.login {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin: auto;
+  padding: 10px;
+  background-color: rgb(245, 246, 247);
+  border: 2px solid rgba(103, 166, 119, 0.8);
+  border-radius: 5px;
 }
