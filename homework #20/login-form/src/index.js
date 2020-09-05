@@ -8,7 +8,7 @@ ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById("content-box")
+  document.querySelector(".content-box")
 );
 
 // If you want your app to work offline and load faster, you can change
